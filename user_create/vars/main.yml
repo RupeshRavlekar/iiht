@@ -1,0 +1,6 @@
+---
+users: 
+       - test
+       - abc
+       - xyz
+# vars file for user_create

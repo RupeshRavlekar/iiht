@@ -1,0 +1,16 @@
+---
+- name:
+  user:
+          name: "{{ item }}"
+  loop:
+          "{{ users }}"
+- name: copying test.txt to temp directory
+  copy:
+          src: test.txt
+          dest: /temp/test.txt
+- name: template demo
+  template:
+          src: demo.txt.j2
+          dest: /temp/abc.txt
+
+# tasks file for user_create

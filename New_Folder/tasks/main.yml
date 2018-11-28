@@ -1,0 +1,7 @@
+---
+# tasks file for New_Folder
+- hosts: localhost
+  become: yes
+  roles:
+          - loop.yml
+
